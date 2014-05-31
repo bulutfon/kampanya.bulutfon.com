@@ -2,40 +2,39 @@
   .container
     .row
       .col-lg-5
-        %a{href: "#", title: "Bulutfon"}
-          %img{alt: "Logo", src: "https://www.bulutfon.com/assets/logo-5888388fcc0d90f508318fd05dce25e4.png"}
+        %a{href: '#', title: 'Bulutfon'}
+          %img{alt: 'Logo', src: 'https://www.bulutfon.com/assets/logo-5888388fcc0d90f508318fd05dce25e4.png'}
       .col-lg-7
         %ul#primary-navigation.pull-right
           %li.active
-            %a{href: "/"} Ana Sayfa
+            %a{href: '/'} Ana Sayfa
           %li
-            %a{href: "/#pricing"} Fiyatlar ve Kayıt
+            %a{href: '/#pricing'} Fiyatlar ve Kayıt
           %li
-            %a{href: "/#how-it-works"} Nasıl Çalışır?
+            %a{href: '/#how-it-works'} Nasıl Çalışır?
           %li
-            %a.last{href: "/#features"} Özellikler
+            %a.last{href: '/#features'} Özellikler
     .row.bigbang
       .col-lg-9.slogan
         %h1
           Teknokent'te ofisi bulunan firmalar,
-          %br
-          %strong
-            kurumsal çalışsın , daha çok üretsin
+          %br/
+          %strong kurumsal çalışsın, daha çok üretsin
           istedik.
         %h3
-          Teknokent'lerde ofisi bulunan bütün Teknokent firmalarına özel
-          %br
-          %strong  bir ay sizden onbir ay bizden
+          Teknokent'lerde ofisi bulunan bütün ar-ge firmalarına özel
+          %br/
+          %strong bir ay sizden onbir ay bizden
           hediye
-          %br
+          %br/
           Bulutfon abonelik fırsatını kaçırmayın.
       .col-lg-3.join
-        %a{href:"/",class:"hero-button btn-success btn-lg"} Hemen Katıl
+        %a{href:'/',class:'hero-button btn-success btn-lg'} Hemen Katıl
   .stage-assets
     .half
     .circle.big
     .circle
     .doctorBulutfon
-      %img{alt: "Bulutfon", src: "/assets/images/doctorBulutfon.png"}
+      = image_tag 'doctorBulutfon.png', alt: 'R&D Illustration'
     .flask
       .inner-flask
