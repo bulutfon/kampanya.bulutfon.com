@@ -32,7 +32,7 @@ $ ->
     bubble $(".medium"), 500, 15
     bubble $(".normal"), 1000, 10
     return
-  ), 3000
+  ), 5000
   return
 
 
