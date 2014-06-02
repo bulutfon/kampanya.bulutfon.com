@@ -199,18 +199,24 @@ body
     .specs
       padding: 0
       list-style: none
-      li
-        text-align: center
+      display: table
+      .spanrow
+        display: table-row
         &:not(:first-child)
-          margin-top: 45px
-        img
-          display: block
-          margin: 0 auto
-        h3
-          font-weight: 400
-        p
-          font-weight: 200
-          color: #6c777f
+          span
+            img
+              padding-top: 30px
+        span
+          display: table-cell
+          text-align: center
+          img
+            display: block
+            margin: 0 auto
+          h3
+            font-weight: 400
+          p
+            font-weight: 200
+            color: #6c777f
   .main
     padding: 0 20px
     p
