@@ -2,6 +2,7 @@
 #### [Current]
 
 #### 
+ * [5c5a8c2](../../commit/5c5a8c2) - __(Tayfun Ozis ERIKAN)__ Improvements and additions were done. - Layouts was improved. - Deploy settings was enabled. - Retina.js was enabled. - Github page settins was enabled.
  * [95d6d34](../../commit/95d6d34) - __(Hakan ERSU)__ Footer link fix
  * [32811b7](../../commit/32811b7) - __(Hakan ERSU)__ Footer added
  * [8e40c09](../../commit/8e40c09) - __(Hakan ERSU)__ Signal improvement
