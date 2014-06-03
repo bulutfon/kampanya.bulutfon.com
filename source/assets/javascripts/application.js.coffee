@@ -1,7 +1,0 @@
-#= require bootstrap
-
-$(document).ready ->
-
-
-
-

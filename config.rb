@@ -17,7 +17,7 @@
 # page "/path/to/file.html", :layout => false
 #
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+page 'teknokent-firmalarina-ozel-kampanya.html', :layout => :teknokent
 #
 # A path which all have the same layout
 # with_layout :admin do
@@ -41,7 +41,7 @@ configure :development do
 end
 
 # Pretty URLs
-activate :directory_indexes
+# activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -66,11 +66,20 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  # activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+config[:file_watcher_ignore] += [ /.idea\// ]
+
+# Deployment
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  deploy.remote = 'git@github.com:bulutfon/bulutfon-campaign.git'
+  deploy.branch = 'gh-pages'
 end

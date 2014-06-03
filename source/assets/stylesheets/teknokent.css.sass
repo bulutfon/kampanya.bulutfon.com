@@ -1,0 +1,318 @@
+@import "compass"
+@import "variables"
+@import "animations"
+@import "bootstrap"
+
+body
+  background: #fff
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: 1.4em
+  overflow-x: hidden
+
+a.join-now-btn
+  font-size: 1.8em
+  padding: 23px 40px
+  text-decoration: none
+  margin-top: 100px
+  text-align: center
+
+a.join-now-second-btn
+  text-decoration: none
+  display: block
+  width: 200px
+  margin-top: 30px
+  text-align: center
+  font-size: 1.3em
+  padding: 12px 20px
+
+.header
+  min-height: 965px
+  background-color: #434a54
+  padding-top: 35px
+  position: relative
+  .rh
+    display: block
+    margin: 0 auto
+  ul#primary-navigation, ul#secondary-navigation
+    margin: 35px 0px 0px
+    li
+      display: inline
+      padding: 10px 4px
+      font-size: 1.2em
+      letter-spacing: 0.05em
+      list-style: none
+      text-indent: -.5em
+      position: relative
+      margin-left: 20px
+      font-family: 'Open Sans', sans-serif
+      &:not(:first-child)
+        &:before
+          content: "•"
+          font-size: 28px
+          color: #fff
+          position: absolute
+          top: 12px
+          left: 0
+          margin-left: -7px
+      &:hover
+        &:before,a
+          color: #2dbd9a
+      a
+        color: #ffffff
+        text-decoration: none
+        &:hover
+          color: #2dbd9a
+  .big-bang
+    position: relative
+    z-index: 9
+
+  .join-now-btn
+    display: block
+
+  .stage-assets
+    z-index: 1
+  .slogan
+    color: #fff
+    font-family: 'Open Sans', sans-serif
+    letter-spacing: 2px
+
+    h1
+      padding-top: 30px
+      font-size: 40px
+      line-height: 49px
+      letter-spacing: 0px
+      font-weight: 200
+    h3
+      font-size: 22px
+      color: #FFFFFF
+      line-height: 34px
+      letter-spacing: 1px
+      font-weight: 200
+      margin-top: 0
+  .half
+    position: absolute
+    top: 0px
+    right: 0px
+    bottom: 0px
+    width: 50%
+    background: rgba(0,0,0,0.04)
+    display: none
+
+  .circle
+    height: 600px
+    width: 1200px
+    border-radius: 1200px 1200px 0 0
+    display: block
+    background: #505761
+    position: absolute
+    bottom: 0
+    left: 50%
+    margin-left: -600px
+
+    &.big
+      width: 1250px
+      height: 625px
+      margin-left: -625px
+      background: #4a515b
+
+  .campaign-illustration
+    position: absolute
+    bottom: 0
+    left: 50%
+    margin-left: -476px
+    margin-bottom: -50px
+  .flask
+    width: 125px
+    height: 275px
+    display: block
+    position: absolute
+    bottom: 120px
+    left: 50%
+    margin-left: 356px
+
+    .inner-flask
+      position: relative
+      width: 100%
+      height: 135px
+      margin-top: 140px
+      display: block
+      &:before
+        position: absolute
+        content: ""
+        background-color: #ffffff
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        top: 10px
+        right: 60px
+        opacity: 0
+        -webkit-animation-name: bubbleOne
+        -webkit-animation-duration: 4s
+        -webkit-animation-delay: 0
+        -webkit-animation-timing-function: linear
+        -webkit-animation-iteration-count: infinite
+      &:after
+        position: absolute
+        content: ""
+        background-color: #ffffff
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        top: 0px
+        right: 60px
+        opacity: 0
+        -webkit-animation-name: bubbleTwo
+        -moz-animation-name: bubbleTwo
+        -ms-animation-name: bubbleTwo
+        -o-animation-name: bubbleTwo
+        animation-name: bubbleTwo
+
+        -webkit-animation-duration: 4s
+        -moz-animation-duration: 4s
+        -ms-animation-duration: 4s
+        -o-animation-duration: 4s
+        animation-duration: 4s
+
+        -webkit-animation-delay: 0
+        -moz-animation-delay: 0
+        -ms-animation-delay: 0
+        -o-animation-delay: 0
+        animation-delay: 0
+
+        -webkit-animation-timing-function: linear
+        -moz-animation-timing-function: linear
+        -ms-animation-timing-function: linear
+        -o-animation-timing-function: linear
+        animation-timing-function: linear
+
+        -webkit-animation-iteration-count: infinite
+        -moz-animation-iteration-count: infinite
+        -ms-animation-iteration-count: infinite
+        -o-animation-iteration-count: infinite
+          animation-iteration-count: infinite
+      .bubble
+        width: 10px
+        height: 10px
+        display: block
+        background: #f5f7f6
+        border-radius: 50%
+        position: absolute
+        top: 15px
+        right: 54px
+
+      .medium
+        width: 15px
+        height: 15px
+  .signal
+    width: 100px
+    height: 100px
+    display: block
+    position: absolute
+    bottom: 450px
+    left: 50%
+    margin-left: -150px
+
+.content-area
+  margin-top: 150px
+
+  .sidebar-info
+    background-color: #e2e8e8
+    min-height: 400px
+    border-radius: 20px
+    padding: 50px 0
+    .specs
+      padding: 0
+      list-style: none
+      display: table
+      .spanrow
+        display: table-row
+        &:not(:first-child)
+          span
+            img
+              padding-top: 30px
+        span
+          display: table-cell
+          text-align: center
+          img
+            display: block
+            margin: 0 auto
+          h3
+            font-weight: 400
+          p
+            font-weight: 200
+            color: #6c777f
+  .main
+    padding: 0 20px
+    p
+      font-size: 1.375em
+      line-height: 1.5em
+      font-weight: 200
+      color: #29343d
+      margin-bottom: 18px
+    h3
+      margin-top: 0
+    h1
+      padding: 30px 0
+footer#footer
+  color: darken(gray, 20)
+  background-color: #181818
+  padding: 80px 0
+  min-height: 300px
+  margin-top: 80px
+  font:
+    size: .85em
+    weight: 300
+
+  .footer-nav
+    margin-top: 35px
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style: none
+        display: inline-block
+        float: left
+        padding-right: 10px
+        a
+          color: gray
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+  .links
+    a
+      color: gray
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+  .footer-copyrights
+    font-size: .85em
+    line-height: 1.3em
+    h5
+      font-size: 1.2em
+      letter-spacing: .025em
+      margin-bottom: 0
+    img.footer-logo
+      +opacity(.2)
+    p.social
+      a
+        text-decoration: none
+        color: darken(gray, 10)
+        &:hover
+          color: gray
+@media (max-width: 767px)
+  .header
+    .slogan
+      h1
+        font-size: 20px
+        line-height: 30px
+        text-align: center
+        padding-top: 0
+      h3
+        font-size: 20px
+        text-align: center
+@media (max-width: 480px)
+  #secondary-navigation
+    display: none
