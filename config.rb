@@ -18,6 +18,7 @@
 #
 # With alternative layout
 page 'teknokent-firmalarina-ozel-kampanya.html', :layout => :teknokent
+page 'muhasebeci-ve-mali-musavirlere-ozel-kampanya.html', :layout => :muhasebeci
 #
 # A path which all have the same layout
 # with_layout :admin do
