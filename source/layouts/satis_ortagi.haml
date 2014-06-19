@@ -1,0 +1,74 @@
+!!!5
+%html{lang: 'en', class: 'no-js'}
+  %head
+    %meta{charset: 'utf-8'}/
+    %meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}/
+    %title= "Bulutfon - #{yield_content :title}"
+    %meta{content: '', name: 'description'}/
+    %meta{content: '',
+     name: 'keywords'}/
+
+    = stylesheet_link_tag 'teknokent',
+                          '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
+                          'fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext'
+
+    = favicon_tag 'favicon.png'
+
+    = yield_content :head
+
+  %body
+
+    %header.header
+      .container
+        .row
+          .col-lg-4.col-xs-12.col-sm-12
+            %a{href: '#', title: 'Bulutfon'}
+              =image_tag 'logo.png', class: 'hidden-sm hidden-xs'
+              =image_tag 'logo.png', class: 'visible-sm visible-xs responsive-logo'
+          .col-lg-8.col-xs-12.col-sm-12
+            %ul#primary-navigation.pull-right.hidden-sm.hidden-xs
+              %li.active
+                %a{href: 'https://www.bulutfon.com/'} Ana Sayfa
+              %li
+                %a{href: 'https://www.bulutfon.com/#pricing'} Fiyatlar ve Kayıt
+              %li
+                %a{href: 'https://www.bulutfon.com/#how-it-works'} Nasıl Çalışır?
+              %li
+                %a.last{href: 'https://www.bulutfon.com/#features'} Özellikler
+            %ul#secondary-navigation.visible-sm.visible-xs
+              %li.active
+                %a{href: 'https://www.bulutfon.com'} Ana Sayfa
+              %li
+                %a{href: 'https://www.bulutfon.com/#pricing'} Fiyatlar ve Kayıt
+              %li
+                %a{href: 'https://www.bulutfon.com/#how-it-works'} Nasıl Çalışır?
+              %li
+                %a.last{href: 'https://www.bulutfon.com/#features'} Özellikler
+
+        .row.big-bang
+          .col-lg-9.slogan
+            %h1
+              Bulutfon satış ortaklarından alınan ürünlerde,
+              %strong
+                ilk ödemeden sonraki 3 ay Bulutfon hediye!
+            %h3
+              Hediye abonelik veren satış ortaklarımız alt kısımda listelenmiştir.
+              %br
+              %strong
+                1 ay sizden 3 ay bizden
+              Bulutfon Sanal Santral abonelik fırsatını kaçırmayın.
+          .col-lg-3.join
+            %a{href:'https://www.bulutfon.com/accounts/new?ref=teknokent_campaign',class:'join-now-btn btn-success btn-lg'} Hemen Katıl
+
+      .stage-assets
+        .half
+        .circle
+        .campaign-illustration
+          = image_tag 'satis_ortagi/illustration-10.png', alt: 'Campaign illustration'
+
+    = yield
+
+    = partial 'layouts/partials/shared/footer'
+    = partial 'layouts/partials/shared/foot'
+
+    = javascript_include_tag 'teknokent'
