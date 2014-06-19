@@ -8,7 +8,7 @@
     %meta{content: '',
      name: 'keywords'}/
 
-    = stylesheet_link_tag 'teknokent',
+    = stylesheet_link_tag 'muhasebeci',
                           '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
                           'fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext'
 
@@ -48,24 +48,39 @@
         .row.big-bang
           .col-lg-9.slogan
             %h1
-              Muhasebeci ve mali müşavirler
-              %strong kurumsal çalışsın, yüksek teknoloji kullansın
-              istedik.
+              Muhasebeci ve mali müşavirler kurumsal,
+              %br/
+              %strong 
+                çalışsın, yüksek teknoloji kullansın istedik.
             %h3
-              Herhangi bir SMMM Odasına üye olan ve telefon numaralarını Bulutfon AŞ'ye taşıyan muhasebeci ve
-              müşavirlerimize
-              %strong 1 ay sizden 11 ay bizden
+              Herhangi bir SMMM Odasına üye olan ve telefon numaralarını Bulutfon AŞ'ye taşıyan muhasebeci ve müşavirlerimize 
+              
+              %strong 1 ay sizden 11 ay bizden 
               Bulutfon Sanal Santral abonelik fırsatını kaçırmayın.
           .col-lg-3.join
             %a{href:'https://www.bulutfon.com/accounts/new?ref=muhasebeci_campaign',class:'join-now-btn btn-success btn-lg'} Hemen Katıl
 
       .stage-assets
-        -#.half
-        -#.circle
-        .campaign-muhasebeci-illustration
+        .half
+        .circle
+        .campaign-illustration
           = image_tag 'campaign-muhasebeci-illustration.png', alt: 'Campaign illustration'
+        .calculator
+          %ul
+            %li
+            %li
+            %li
+  
+          
+        .signal
+          .wifi-symbol
+            .wifi-circle.first
+            .wifi-circle.second
+            .wifi-circle.third
 
     = yield
 
     = partial 'layouts/partials/shared/footer'
     = partial 'layouts/partials/shared/foot'
+
+    = javascript_include_tag 'muhasebeci'
