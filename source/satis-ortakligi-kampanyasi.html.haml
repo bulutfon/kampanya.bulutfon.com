@@ -1,22 +1,20 @@
-- page 'Satis Ortagi'
+- page 'Satış Ortaklığı Kampanyası'
 
 .content-area
-  .container.info_campaign
+  .container
     .row
       .col-md-7.main
         %h3.bulutfon-blue KAMPANYA DETAYLARI
-        %h1 1+3 Bulutfon Satış Ortakları Kampanyası
+        %h1 Satış Ortaklığı Kampanyası
         %p
-          Kampanyadan sadece satış ortağı firmalardan ürün, hizmet satın alanlar yararlanabilir.
+          Bulutfon satış ortaklarından alınan ürünlerde,
+          %strong ilk ödemeden sonraki 3 ay Bulutfon hediye!
         %p
-          Kampanya kapsamında satış ortağı firmalardan hizmet alırken kullanılan e-posta adresi ile
-          Bulutfon aboneliği başlatanlara ilk ay ödemesi sonrası 3 ay hediye edilecektir.
+          Kampanya kapsamında satış ortağı firmalardan hizmet alırken kullanılan e-posta adresi ile Bulutfon aboneliği başlatanlara ilk ay ödemesi sonrası 3 ay hediye edilecektir.
         %p
-          Kampanyadan faydalanan aboneler bir üst santral pakete geçmek ister ise paket yükseltimi için sistem
-          3 aylık fark ödemesi alacaktır.
+          Kampanyadan faydalanan aboneler bir üst santral pakete geçmek ister ise paket yükseltimi için sistem 3 aylık fark ödemesi alacaktır.
         %p
-          Bu kampanya sadece santral ücretleri ile sınırlıdır. Konuşma ücretleri, cihaz alımı ve diğer
-          hizmetlerde bir indirim yoktur.
+          Bu kampanya sadece santral ücretleri ile sınırlıdır. Konuşma ücretleri, cihaz alımı ve diğer hizmetlerde bir indirim yoktur.
         %p
           Kampanya hakkında daha fazla bilgi almak için
           %span.bulutfon-blue
@@ -24,7 +22,7 @@
           veya
           %span.bulutfon-blue
             0850 885 0 000
-          'dan bizlere ulaşabilir veya satış ortağımız olan firmalardan bilgi alabilirsiniz.
+          'dan bizlere ulaşabilirsiniz.
 
         %p
           %a{href:'https://www.bulutfon.com/accounts/new?ref=teknokent_campaign',class:'join-now-second-btn btn-success btn-lg'} Hemen Katıl
@@ -50,18 +48,19 @@
                   %img{alt: "Logo", src: "https://www.bulutfon.com/assets/icon-clouds-5fbb11a61aeb6af1e20f7142b70b06dc.png"}
                   %h3 Bulut Tabanlı
                   %p Platform ve mekandan bağımsız çalışmaktadır. Dolayısı ile bakım maliyeti 0'dır. Size sadece kullanmak kalır.
-.container
-  .row
-    %h3.bulutfon-blue SATIŞ ORTAKLARIMIZ
-    %br
-      %br
-    .col-md-4
-      %a{href: 'http://lab2023.com', target: '_blank'}
-        = image_tag 'satis_ortagi/lab2023-logo.png', alt: 'Satis Ortaklarimiz Lab2023'
-    .col-md-5.position_logo
-      %a{href: 'http://maestropanel.com/', target: '_blank'}
-        = image_tag 'satis_ortagi/maestro_logo.png', alt: 'Satis Ortaklarimiz Maestropanel'
-    .col-md-3.position_logo
-      %a{href: 'http://www.netinternet.com.tr/', target: '_blank'}
-        = image_tag 'satis_ortagi/logo_ni.png', alt: 'Satis Ortaklarimiz Netinternet'
 
+  .container
+    .row.text-center
+      %h1 SATIŞ ORTAKLARIMIZ
+      %br
+      %br
+    .row.text-center
+      .col-md-4
+        %a{href: 'http://lab2023.com', target: '_blank'}
+          = image_tag 'satis_ortagi/lab2023-logo.png', alt: 'Satis Ortaklarimiz Lab2023', height: '90',  width: '300'
+      .col-md-4
+        %a{href: 'http://maestropanel.com/', target: '_blank'}
+          = image_tag 'satis_ortagi/maestro_logo.png', alt: 'Satis Ortaklarimiz Maestropanel', height: '90',  width: '300'
+      .col-md-4
+        %a{href: 'http://www.netinternet.com.tr/', target: '_blank'}
+          = image_tag 'satis_ortagi/logo_ni.png', alt: 'Satis Ortaklarimiz Netinternet', height: '90',  width: '300'
