@@ -20,6 +20,7 @@
 page 'teknokent-firmalarina-ozel-kampanya.html', :layout => :teknokent
 page 'muhasebeci-ve-mali-musavirlere-ozel-kampanya.html', :layout => :muhasebeci
 page 'satis_ortagi.html', :layout => :satis_ortagi
+page 'uc-arti-bir-kapmanyasi.html', :layout => :ucartibir
 #
 # A path which all have the same layout
 # with_layout :admin do
