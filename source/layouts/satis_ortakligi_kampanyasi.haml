@@ -8,9 +8,9 @@
     %meta{content: '',
      name: 'keywords'}/
 
-    = stylesheet_link_tag 'teknokent',
+    = stylesheet_link_tag 'satis_ortakligi',
                           '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
-                          '//fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext'
+                          'fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext'
 
     = favicon_tag 'favicon.png'
 
@@ -48,35 +48,26 @@
         .row.big-bang
           .col-lg-9.slogan
             %h1
-              Teknokent'te ofisi bulunan firmalar,
+              Bulutfon satış ortaklarından alınan ürünlerde,
               %br/
-              %strong kurumsal çalışsın, daha çok üretsin
-              istedik.
+              %strong
+                ilk ödemeden sonraki 3 ay Bulutfon hediye!
             %h3
-              Teknokentlerde ofisi bulunan bütün ar-ge firmalarına özel
-              %br/
-              %strong 1 ay sizden 11 ay bizden
+              Hediye abonelik veren satış ortaklarımız alt kısımda listelenmiştir.
+              %strong 1 ay sizden 3 ay bizden
               Bulutfon Sanal Santral abonelik fırsatını kaçırmayın.
           .col-lg-3.join
-            %a{href:'https://www.bulutfon.com/accounts/new?ref=teknokent_campaign',class:'join-now-btn btn-success btn-lg'} Hemen Katıl
+            %a{href:'https://www.bulutfon.com/accounts/new?ref=sales_partnership_campaign',class:'join-now-btn btn-success btn-lg'} Hemen Katıl
 
       .stage-assets
         .half
         .circle
-        .campaign-teknokent-illustration
-          = image_tag 'campaign-teknokent-illustration.png', alt: 'Campaign illustration'
-        .flask
-          .inner-flask
-            .bubble.normal
-            .bubble.medium
-            .bubble.large
-        .signal
-          .wifi-symbol
-            .wifi-circle.first
-            .wifi-circle.second
-            .wifi-circle.third
+        .campaign-illustration
+          = image_tag 'sales-partners-illustration.png', alt: 'Satış Ortaklıği İllustrasyon'
 
     = yield
 
     = partial 'layouts/partials/shared/footer'
     = partial 'layouts/partials/shared/foot'
+
+    = javascript_include_tag 'satis_ortakligi'

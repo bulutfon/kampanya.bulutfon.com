@@ -8,9 +8,9 @@
     %meta{content: '',
      name: 'keywords'}/
 
-    = stylesheet_link_tag 'teknokent',
+    = stylesheet_link_tag 'muhasebeci',
                           '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
-                          '//fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext'
+                          'fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext'
 
     = favicon_tag 'favicon.png'
 
@@ -48,28 +48,28 @@
         .row.big-bang
           .col-lg-9.slogan
             %h1
-              Teknokent'te ofisi bulunan firmalar,
+              Muhasebeci ve mali müşavirler kurumsal,
               %br/
-              %strong kurumsal çalışsın, daha çok üretsin
-              istedik.
+              %strong 
+                çalışsın, yüksek teknoloji kullansın istedik.
             %h3
-              Teknokentlerde ofisi bulunan bütün ar-ge firmalarına özel
-              %br/
-              %strong 1 ay sizden 11 ay bizden
+              Herhangi bir SMMM Odasına üye olan ve telefon numaralarını Bulutfon AŞ'ye taşıyan muhasebeci ve müşavirlerimize 
+              
+              %strong 1 ay sizden 11 ay bizden 
               Bulutfon Sanal Santral abonelik fırsatını kaçırmayın.
           .col-lg-3.join
-            %a{href:'https://www.bulutfon.com/accounts/new?ref=teknokent_campaign',class:'join-now-btn btn-success btn-lg'} Hemen Katıl
+            %a{href:'https://www.bulutfon.com/accounts/new?ref=muhasebeci_campaign',class:'join-now-btn btn-success btn-lg'} Hemen Katıl
 
       .stage-assets
         .half
         .circle
-        .campaign-teknokent-illustration
-          = image_tag 'campaign-teknokent-illustration.png', alt: 'Campaign illustration'
-        .flask
-          .inner-flask
-            .bubble.normal
-            .bubble.medium
-            .bubble.large
+        .campaign-illustration
+          = image_tag 'campaign-muhasebeci-illustration.png', alt: 'Campaign illustration'
+        .calculator
+          %ul
+            %li
+            %li
+            %li
         .signal
           .wifi-symbol
             .wifi-circle.first
@@ -80,3 +80,5 @@
 
     = partial 'layouts/partials/shared/footer'
     = partial 'layouts/partials/shared/foot'
+
+    = javascript_include_tag 'muhasebeci'
