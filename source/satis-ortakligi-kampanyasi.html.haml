@@ -23,31 +23,12 @@
           %span.bulutfon-blue
             0850 885 0 000
           'dan bizlere ulaşabilirsiniz.
-
         %p
-          %a{href:'https://www.bulutfon.com/accounts/new?ref=teknokent_campaign',class:'join-now-second-btn btn-success btn-lg'} Hemen Katıl
+          %a{href:'https://www.bulutfon.com/accounts/new?ref=sales_partnership_campaign',class:'join-now-second-btn btn-success btn-lg'} Hemen Katıl
       .col-md-4.col-md-offset-1
         .row.sidebar-info
           .col-md-12
-            %div.specs
-              %div.spanrow
-                %span
-                  %img{alt: "Logo", src: "http://www.bulutfon.com/assets/icon-gift-228a34850a7b1301b6d5b139eb260e3f.png"}
-                  %h3 850'li Numara
-                  %p İster coğrafi olmayan 0850'li numaralar ile isterseniz mevcut numaranızı taşıyarak kullanabilirsiniz.
-                %span
-                  %img{alt: "Logo", src: "https://www.bulutfon.com/assets/icon-game-console-2ee23b8965a26097481cd4d62be48420.png"}
-                  %h3 Kolay Kullanım
-                  %p Üst seviye santral özelliklerini her hangi bir uzmana ihtiyaç duymadan düzenleyebilirsiniz.
-              %div.spanrow
-                %span
-                  %img{alt: "Logo", src: "https://www.bulutfon.com/assets/icon-control-panel-26e29fe3ec8025efbe68f06192f93065.png"}
-                  %h3 Yönetim Paneli
-                  %p İnternet üzerinden her özelliği istediğiniz gibi düzenleyebilmeniz ve yönetebilmeniz mümkünüdür.
-                %span
-                  %img{alt: "Logo", src: "https://www.bulutfon.com/assets/icon-clouds-5fbb11a61aeb6af1e20f7142b70b06dc.png"}
-                  %h3 Bulut Tabanlı
-                  %p Platform ve mekandan bağımsız çalışmaktadır. Dolayısı ile bakım maliyeti 0'dır. Size sadece kullanmak kalır.
+            = partial 'layouts/partials/shared/specs'
 
   .container
     .row.text-center
@@ -55,39 +36,31 @@
       %h1 KAMPANYADAN YARARLANABİLECEĞİNİZ SATIŞ ORTAKLARIMIZ
       %br
       %br
-    .row.text-center
-      .col-md-4
-        %a{href: 'http://lab2023.com', target: '_blank'}
-          = image_tag 'satis_ortagi/lab2023-300.png', alt: 'Satis Ortaklarimiz Lab2023', height: '80',  width: '300'
-      %br
-      .col-md-4
-        %a{href: 'http://maestropanel.com/', target: '_blank'}
-          = image_tag 'satis_ortagi/maestropanel-300.png', alt: 'Satis Ortaklarimiz Maestropanel', height: '80',  width: '300'
-      %br
-      .col-md-4
-        %a{href: 'http://www.netinternet.com.tr/', target: '_blank'}
-          = image_tag 'satis_ortagi/netinternet.png', alt: 'Satis Ortaklarimiz Netinternet', height: '80',  width: '300'
-      %br
-      .col-md-4
-        %a{href: 'http://www.ilan.com.tr', target: '_blank'}
-          = image_tag 'satis_ortagi/ilancomtr-logo.png', alt: 'Satis Ortaklarimiz İlan.com.tr', height: '80',  width: '300'
-      %br
-      .col-md-4
-        %a{href: 'http://www.mantiksal.com/', target: '_blank'}
-          = image_tag 'satis_ortagi/mantıksal-300.jpg', alt: 'Satis Ortaklarimiz Mantıksal', height: '80',  width: '300'
-      %br
-      .col-md-4
-        %a{href: 'http://www.internetbilisim.net/', target: '_blank'}
-          = image_tag 'satis_ortagi/internetbilisim-300.png', alt: 'Satis Ortaklarimiz İnternet Bilişim', height: '80',  width: '300'
-      %br
-      .col-md-4
-        %a{href: 'http://www.webadam.com', target: '_blank'}
-          = image_tag 'satis_ortagi/webadam-300.png', alt: 'Satis Ortaklarimiz Webadam', height: '80',  width: '300'
-      %br
-      .col-md-4
+    .row.text-center.brand-logo
+      .col-md-4.brand-top
         %a{href: 'http://www.corelux.com.tr/', target: '_blank'}
-          = image_tag 'satis_ortagi/corelux-300.png', alt: 'Satis Ortaklarimiz Corelux', height: '80',  width: '300'
-      %br
+          = image_tag 'satis_ortagi/corelux-300.jpg', alt: 'Satış Ortaklarımız Corelux'
       .col-md-4
         %a{href: 'http://www.divanyazilim.com/', target: '_blank'}
-          = image_tag 'satis_ortagi/divanyazilim-300.png', alt: 'Satis Ortaklarimiz Divan Yazılım', height: '80',  width: '300'
+          = image_tag 'satis_ortagi/divanyazilim-300.png', alt: 'Satış Ortaklarımız Divan Yazılım'
+      .col-md-4
+        %a{href: 'http://www.ilan.com.tr', target: '_blank'}
+          = image_tag 'satis_ortagi/ilancomtr-logo.png', alt: 'Satış Ortaklarımız İlan.com.tr'
+      .col-md-4
+        %a{href: 'http://www.internetbilisim.net/', target: '_blank'}
+          = image_tag 'satis_ortagi/internetbilisim-300.png', alt: 'Satış Ortaklarımız İnternet Bilişim'
+      .col-md-4
+        %a{href: 'http://lab2023.com', target: '_blank'}
+          = image_tag 'satis_ortagi/lab2023-300.jpg', alt: 'Satış Ortaklarımız Lab2023'
+      .col-md-4
+        %a{href: 'http://maestropanel.com/', target: '_blank'}
+          = image_tag 'satis_ortagi/maestropanel-300.png', alt: 'Satış Ortaklarımız Maestropanel'
+      .col-md-4
+        %a{href: 'http://www.mantiksal.com/', target: '_blank'}
+          = image_tag 'satis_ortagi/mantıksal-300.png', alt: 'Satış Ortaklarımız Mantıksal'
+      .col-md-4
+        %a{href: 'http://www.netinternet.com.tr/', target: '_blank'}
+          = image_tag 'satis_ortagi/netinternet.png', alt: 'Satış Ortaklarımız Netinternet'
+      .col-md-4
+        %a{href: 'http://www.webadam.com', target: '_blank'}
+          = image_tag 'satis_ortagi/webadam-300.png', alt: 'Satış Ortaklarımız Webadam'
