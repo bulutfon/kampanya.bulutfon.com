@@ -48,17 +48,20 @@
         .row.big-bang
           .col-lg-9.slogan
             %h1
-              Muhasebeci ve mali müşavirler kurumsal,
+              %strong Muhasebeci ve mali müşavirler,
+              kurumsal
               %br/
-              %strong 
-                çalışsın, yüksek teknoloji kullansın istedik.
+              çalışsın, yüksek teknoloji kullansın istedik.
             %h3
               Herhangi bir SMMM Odasına üye olan ve telefon numaralarını Bulutfon AŞ'ye taşıyan muhasebeci ve müşavirlerimize 
               
               %strong 1 ay sizden 11 ay bizden 
               Bulutfon Sanal Santral abonelik fırsatını kaçırmayın.
           .col-lg-3.join
-            %a{href:'https://www.bulutfon.com/accounts/new?ref=muhasebeci_campaign',class:'join-now-btn btn-success btn-lg'} Hemen Katıl
+            = link_to 'https://www.bulutfon.com/accounts/new?ref=teknokent_campaign', class: 'join-now-btn btn-success btn-lg' do
+              Hemen Katıl
+            %p.show-detils
+              = link_to 'Kampanya Detaylarını İncele', '#kampanya-detaylari'
 
       .stage-assets
         .half
