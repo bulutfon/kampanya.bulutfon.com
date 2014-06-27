@@ -1,5 +1,9 @@
 
 #### [Current]
+
+
+#### 0.2.0
+ * [5274b80](../../commit/5274b80) - __(Tayfun Ozis ERIKAN)__ Bump version 0.2.0
  * [74978d2](../../commit/74978d2) - __(Tayfun Ozis ERIKAN)__ Code refactoring and some improvements
  * [44777e8](../../commit/44777e8) - __(Hakan ERSU)__ Teknokent sayfasi hatalar giderildi.
  * [1078290](../../commit/1078290) - __(safiyesepetci)__ typo fixed
